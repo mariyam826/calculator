@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    
+    <h1 class="mt-5 text-center text-dark">CALCULATOR</h1>
+
+    <div class="calcBody">
+        <div class="calcScreen">
+            <div id="calcTyped">
+                <input type="text" id="result" placeholder="0" class="form-control" readonly>
+                <!-- readonly- no input from user -->
+            </div>
+        </div>
+        <div class="calcButton">
+            <button id="seven" onclick="displayData('7')">7</button>
+            <button id="eight" onclick="displayData('8')">8</button>
+            <button id="nine" onclick="displayData('9')">9</button>
+            <button id="mul" class="opt" onclick="displayData('*')">&#215;</button>
+            <button id="four" onclick="displayData('4')">4</button>
+            <button id="five" onclick="displayData('5')">5</button>
+            <button id="six" onclick="displayData('6')">6</button>
+            <button id="sub" class="opt" onclick="displayData('-')">&#8722;</button>
+            <button id="one" onclick="displayData('1')">1</button>
+            <button id="two" onclick="displayData('2')">2</button>
+            <button id="three" onclick="displayData('3')">3</button>
+            <button id="add" class="opt" onclick="displayData('+')">&#43;</button>
+            <button id="ac" class="ac" onclick="calcClear()">AC</button>
+            <button id="zero" class="opt" onclick="displayData('0')">0</button>
+            <button id="div" class="opt" onclick="displayData('/')">&#247;</button>
+            <button id="equal" class="opt" onclick="calcResult()">&#61;</button>
+            <button id="del" onclick="removeLast()">&#9003;</button>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+<!-- js file link -->
+<script src="./main.js"></script>
+
+</html>
